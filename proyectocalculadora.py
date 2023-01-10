@@ -20,7 +20,8 @@ while True:
     print("4. Dividir")
     print("5. Raíz")
     print("6. Exponente")
-    print("7. Salir")
+    print("7. Seno")
+    print("8. Salir")
     opc = input("Ingresa una opción: ")
     if opc == "1":
         n1 = float(input("Ingresa el número 1: "))
@@ -59,5 +60,10 @@ while True:
                  print("El resultado es: ", resultado)
                  break
     elif opc == "7":
+        rad = input("Ingresa el número: ")
+        s1 = float(rad)
+        s2 = math.radians(s1)
+        print("El seno del número es: ", math.sin(s2))
+    elif opc == "8":
         print("¡Hasta luego!")
         break
