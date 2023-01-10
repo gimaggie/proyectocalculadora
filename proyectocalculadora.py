@@ -1,3 +1,4 @@
+from math import sqrt
 def S(a, b):
     return a + b
 def R(a, b):
@@ -6,12 +7,15 @@ def M(a, b):
     return a * b
 def D(a, b):
     return a / b
+def Z(a):
+    return sqrt(n1)
 while True:
     print("Menú")
     print("1. Sumar")
     print("2. Restar")
     print("3. Multiplicar")
     print("4. Dividir")
+    print("5. Raíz")
     opc = input("Ingresa una opción: ")
     n1 = float(input("Ingresa el número 1: "))
     n2 = float(input("Ingresa el número 2: "))
@@ -23,3 +27,5 @@ while True:
         print("La división es:", M(n1, n2))
     elif opc == "4":
         print("La multiplicación es", D(n1, n2))
+    elif opc =="5":
+        print("La raíz del primer número es:", Z(n1))
